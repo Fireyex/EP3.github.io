@@ -1,0 +1,321 @@
+*{
+    --color1: #ec4545;
+    --color2: #24241d;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/portada.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Arima";
+}
+
+#portadadiv{
+    width: 800px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, 0.795);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    color: white;
+    font-family: "Playwrite GB S";
+    padding: 50px 100px;
+    border-radius: 20px;
+}
+
+
+h1{
+    font-size: 50px;
+    margin: 10px 0 0 0;
+    font-family: serif;
+    color: var(--color1);
+}
+
+.menu{
+    margin: 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#menuInicio{
+    width: 100%;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+.menu a li{
+    list-style: none;
+    padding: 10px 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#tituloInicio{
+    padding-bottom: 30px;
+    font-size: 100px;
+}
+
+#pPortada{
+    padding-bottom: 30px;
+    font-size: 18px;
+}
+
+.liportada{
+    background-color:  rgba(255, 255, 255, 0.418);
+}
+
+.liportada:hover{
+    background: rgba(255, 255, 255, 0.74);
+    transition: 0.5s;
+}
+
+#menufavicon{
+    margin-bottom: 10px;
+}
+
+#menufavicon a i{
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.192);
+    color: rgb(231, 231, 231);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+#menufavicon a i:hover{
+    background-color: var(--color2);
+    color: white;
+    transition: 0.8s;
+}
+
+.liInicio{
+    color: white;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.192);
+    color: rgb(231, 231, 231);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.liInicio:hover{
+    background-color: var(--color2);
+    color: white;
+    transition: 0.6s;
+}
+
+.liotros{
+    color: var(--color2);
+}
+
+.liotros:hover{
+    background-color: var(--color2);
+    color: white;
+    transition: 0.6s;
+}
+
+.actual{
+    text-decoration:underline;
+    text-decoration-thickness: 3px;
+}
+
+header{
+    width: 60%;
+    background-color: white;
+    border: 5px solid var(--color2);
+    text-align: center;
+    padding-bottom: 1px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%,0%);
+    box-sizing: border-box;
+}
+
+main{
+    border: 5px solid var(--color2);
+    margin: 0 auto;
+    width: 60%;
+    background-color: white;
+    text-align: center;
+    padding: 150px 50px 10px 50px;
+    box-sizing: border-box;
+}
+
+
+#tituloblog img{
+    max-width: 50%;
+}
+
+.lugar{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    text-align: justify;
+}
+
+.lugar img{
+    max-width: 90%;
+}
+
+.porciento30{
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.porciento70{
+    width: 70%;
+    margin: top;
+    box-sizing: border-box;
+}
+
+footer{
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto 10px auto;
+    width: 60%;
+    background-color: var(--color2);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+iframe{
+    width: 800px;
+    height: 490px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.galeria div {
+    margin: 10px;
+}
+
+.galeria img {
+    width: 250px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+/* Nosotros.html*/
+.container{
+    margin: 0 auto 20px auto;
+    width: 90%;
+    height: 70%;
+
+    display: grid;
+    grid-template-columns: 2fr 2fr 1.5fr;
+    grid-template-rows: 50px 1fr 300px 50px;
+}
+
+.container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+#divisionNosotros1{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: grid;
+    place-items: center;
+    color: white;
+    background-color: var(--color2);
+}
+
+#divisionNosotros2{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    text-align: justify;
+    padding: 10px;
+}
+
+#imagenbanner{
+    grid-column: 3/4;
+    grid-row: 2/4;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#imagenNosotros1{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#imagenNosotros2{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+#copyrightNosotros{
+    grid-column: 1/5;
+    grid-row: 4/5;
+    line-height: 55px;
+    background-color: var(--color2);
+    color: white;
+}
+
+/* Contactos.html*/
+#contactos{
+    background: linear-gradient(to top, rgb(150, 150, 150), rgb(210, 210, 210), white)
+}
+
+#contactosArriba{
+    display: flex;
+    justify-content: space-around;
+}
+
+#contactos iframe{
+    margin: 10px;
+    border: 10px solid rgb(73, 67, 62);
+    border-radius: 10px;
+}
+
+.divContactos{
+    flex: 1;
+}
+
+.divContactos p{
+    text-align: justify;
+}
+
+form label, form select, form label, form input{
+    text-align: start;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-top: 10px;
+}
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 90%;
+    background-color: antiquewhite;
+}
+
+table td, table th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+table tr td img{
+    max-width: 60%;
+}
