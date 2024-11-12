@@ -183,7 +183,7 @@ footer{
 }
 
 iframe{
-    width: 800px;
+    width: 90%;
     height: 490px;
 }
 
@@ -198,8 +198,10 @@ iframe{
 }
 
 .galeria img {
-    width: 250px;
-    height: 200px;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
     border-radius: 8px;
 }
 
